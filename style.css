@@ -1,0 +1,12 @@
+html, body{
+	margin: 0px;
+	padding: 0px;
+}
+
+.Touch_Keyboard_Container{
+	background-color: gray;
+	margin:auto;
+	
+	height: 100em;
+	width: 100em;
+}
