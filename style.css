@@ -1,12 +1,45 @@
-html, body{
+html,
+body {
 	margin: 0px;
 	padding: 0px;
 }
 
-.Touch_Keyboard_Container{
-	background-color: gray;
-	margin:auto;
-	
-	height: 100em;
+#Touch_Keyboard_Container {
+	background-color: gainsboro;
+	margin: auto;
+	margin-top: 30px;
+	flex-wrap: wrap;
+
+	height: 910px;
 	width: 100em;
+
+	border-radius: 20px;
+	display: flex;
+
+	align-items: center;
+}
+
+.Touch_Keyboard_Block_letter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+	color: gainsboro;
+
+	height: 50px;
+	width: 50px;
+	border-radius: 25px;
+	text-align: center;
+	margin: 20px;
+
+}
+
+.Column_Touch_Keyboard_Block {
+
+	
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	height: 100%;
+	margin: 10px;
 }
