@@ -6,6 +6,13 @@ var GAMES ={
     DislayLetter:[[],[],[],[],[],[],[],[],[],[],[],[],[],],
     score: 0,
     BestScore: localStorage["bestscore"] ? localStorage["bestscore"] : 0,
+    refreshRate : function (){
+        var url = new URL (window.location.href)
+        var level = url.searchParams.get("level")
+        if (level ==1)return 500
+        if (level ==2)return 300
+        if (level ==3)return 150
+    }()
 
 }
 const CONFIG = {
@@ -127,7 +134,7 @@ function Refresh_Game(){
 	else {
 
 	    Repain_letter()
-		setTimeout(Refresh_Game, 200)
+		setTimeout(Refresh_Game, GAMES.refreshRate)
 	}
 	Refresh_score()
     Refresh_BestScore()
